@@ -290,17 +290,16 @@
         <img src="assets/Asset-18.png" alt="Descriptive alt text" class="content-image-viewalltext">
         <!-- Scrollable Image Container -->
         <div class="scroll-container">
-            <img src="assets/Asset-19.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/Asset-19.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/Asset-19.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/Asset-19.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/Asset-19.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/Asset-19.png" alt="Descriptive alt text" class="content-image-lineup">
+            <img src="assets/lineup/Asset-58.png" alt="Descriptive alt text" class="content-image-lineup">
+            <img src="assets/lineup/Asset-59.png" alt="Descriptive alt text" class="content-image-lineup">
+            <img src="assets/lineup/Asset-60.png" alt="Descriptive alt text" class="content-image-lineup">
+            <img src="assets/lineup/Asset-61.png" alt="Descriptive alt text" class="content-image-lineup">
+            <img src="assets/lineup/Asset-62.png" alt="Descriptive alt text" class="content-image-lineup">
         </div>
 
 
         <!-- Countdown Section -->
-        <img src="assets/Asset-17.png" alt="Descriptive alt text" class="content-image-countdown">
+        {{-- <img src="assets/Asset-17.png" alt="Descriptive alt text" class="content-image-countdown"> --}}
         <div class="countdown-container">
             <div class="countdown-item"><span id="days">00</span> Days</div>
             <div class="countdown-item"><span id="hours">00</span> Hours</div>
