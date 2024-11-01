@@ -18,7 +18,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('assets/Asset-15.png');
+            background-image: url('assets/bg-page.png');
             background-size: cover;
             background-repeat: no-repeat;
             z-index: -1;
@@ -188,7 +188,7 @@
         }
 
         .content-image-lineup {
-            width: 80%;
+            width: 30%;
             /* Adjust width as needed */
             max-width: 1000px;
             border-radius: 8px;
@@ -201,59 +201,20 @@
             border-radius: 8px;
         }
 
-        .content-image-viewalltext {
-            width: 7%;
-            /* Adjust width as needed */
-            max-width: 1000px;
-            border-radius: 8px;
-        }
-
-        /* Scrollable image container */
-        .scroll-container {
+        /* Flex container styling */
+        .container {
             display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            width: 80%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 1rem;
+            /* Adjust the spacing between items */
+        }
+
+        /* Each image takes up one-third of the container width */
+        .content-image-lineup {
+            width: 27%;
             border-radius: 8px;
-            margin-bottom: 3rem;
-            scrollbar-width: none;
-            /* For Firefox */
-        }
-
-        .scroll-container::-webkit-scrollbar {
-            display: none;
-            /* For Chrome, Safari, and Edge */
-        }
-
-        .scroll-container img {
-            border-radius: 8px;
-            max-width: 450px;
-            /* Set a maximum width for each image */
-        }
-
-        /* Countdown Section */
-
-        .content-image-countdown {
-            width: 20%;
-            max-width: 1000px;
-            border-radius: 8px;
-            margin-top: 6rem;
-        }
-
-        .countdown-container {
-            font-size: 2rem;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 0.2rem;
-            margin-bottom: 4rem;
-        }
-
-        .countdown-item {
-            display: inline-block;
-            margin: 0 1rem;
-            text-align: center;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -267,42 +228,22 @@
         <div class="navbar">
             <ul>
                 <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">HOME</a></li>
-                <li><a href="{{ route('lineup') }}" class="{{ request()->routeIs('lineup') ? 'active' : '' }}">LINE UP</a></li>
-                <li><a href="{{ route('package') }}" class="{{ request()->routeIs('package') ? 'active' : '' }}">PACKAGE</a></li>
-                <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT US</a></li>
+                <li><a href="{{ route('lineup') }}" class="{{ request()->routeIs('lineup') ? 'active' : '' }}">LINE
+                        UP</a></li>
+                <li><a href="{{ route('package') }}"
+                        class="{{ request()->routeIs('package') ? 'active' : '' }}">PACKAGE</a></li>
+                <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT
+                        US</a></li>
                 <li><a href="{{ route('faq') }}" class="{{ request()->routeIs('faq') ? 'active' : '' }}">FAQ</a></li>
             </ul>
         </div>
 
+        {{-- Title --}}
+        <img src="assets/Asset-17.png" alt="Descriptive alt text" class="content-image-mid2">
 
-        {{-- --HOME-- --}}
-        {{-- Jababeka --}}
-        <img src="assets/Asset-9.png" alt="Descriptive alt text" class="content-image-head">
-
-        {{-- BE-BENZ --}}
-        <img src="assets/Asset-23.png" alt="Descriptive alt text" class="content-image-mid">
-
-        {{-- DATE --}}
-        <img src="assets/Asset-26.png" alt="Descriptive alt text" class="content-image-mid2">
-
-        <!-- BUTTON -->
-        <div class="button-container">
-            <a href="{{ route('order.create') }}">
-                <button class="button-primary">BUY TICKETS</button>
-            </a>
-            <a href="{{ route('faq') }}">
-                <button class="button-secondary">FAQ</button>
-            </a>
-        </div>
-
-
-        {{-- --LINEUP SECTION-- --}}
-        {{-- LINEUP TEXT --}}
-        <img src="assets/Asset-17.png" alt="Descriptive alt text" class="content-image-lineuptext">
-        {{-- VIEWALL TEXT --}}
-        <img src="assets/Asset-18.png" alt="Descriptive alt text" class="content-image-viewalltext">
-        <!-- Scrollable Image Container -->
-        <div class="scroll-container">
+        {{-- Konten --}}
+        <!-- Konten -->
+        <div class="container">
             <img src="assets/lineup/Asset-58.png" alt="Descriptive alt text" class="content-image-lineup">
             <img src="assets/lineup/Asset-59.png" alt="Descriptive alt text" class="content-image-lineup">
             <img src="assets/lineup/Asset-60.png" alt="Descriptive alt text" class="content-image-lineup">
@@ -311,43 +252,7 @@
         </div>
 
 
-        <!-- Countdown Section -->
-        {{-- <img src="assets/Asset-17.png" alt="Descriptive alt text" class="content-image-countdown"> --}}
-        <div class="countdown-container">
-            <div class="countdown-item"><span id="days">00</span> Days</div>
-            <div class="countdown-item"><span id="hours">00</span> Hours</div>
-            <div class="countdown-item"><span id="minutes">00</span> Minutes</div>
-            <div class="countdown-item"><span id="seconds">00</span> Seconds</div>
-        </div>
     </main>
-    <script>
-        // Set the event date
-        const eventDate = new Date('2025-01-10T23:59:59').getTime();
-
-        // Update the countdown every second
-        const countdownInterval = setInterval(() => {
-            const now = new Date().getTime();
-            const timeLeft = eventDate - now;
-
-            // Calculate days, hours, minutes, and seconds
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            // Display the results
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
-
-            // If the countdown is over, stop the timer
-            if (timeLeft < 0) {
-                clearInterval(countdownInterval);
-                document.querySelector('.countdown-container').innerText = 'Event Started!';
-            }
-        }, 1000);
-    </script>
 </body>
 
 </html>

@@ -8,6 +8,9 @@
     <title>Be-Benz</title>
     <!-- Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet">
+
     <style>
         /* Centering content in the body */
 
@@ -18,7 +21,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('assets/Asset-15.png');
+            background-image: url('assets/bg-page.png');
             background-size: cover;
             background-repeat: no-repeat;
             z-index: -1;
@@ -53,7 +56,7 @@
             /* Semi-transparent background */
             margin-top: 65px;
             color: #fff;
-            width: 500px;
+            width: 560px;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -63,7 +66,7 @@
         .navbar ul {
             list-style: none;
             display: flex;
-            gap: 1.3rem;
+            gap: 1.2rem;
             margin: 0;
             padding: 0;
         }
@@ -124,8 +127,9 @@
         }
 
         .content-image-mid {
-            margin-top: 3.5rem;
-            width: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 40%;
             /* Adjust width as needed */
             max-width: 1000px;
             border-radius: 8px;
@@ -188,7 +192,7 @@
         }
 
         .content-image-lineup {
-            width: 80%;
+            width: 30%;
             /* Adjust width as needed */
             max-width: 1000px;
             border-radius: 8px;
@@ -201,59 +205,21 @@
             border-radius: 8px;
         }
 
-        .content-image-viewalltext {
-            width: 7%;
-            /* Adjust width as needed */
-            max-width: 1000px;
-            border-radius: 8px;
-        }
-
-        /* Scrollable image container */
-        .scroll-container {
+        /* Flex container styling */
+        .container {
             display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            width: 80%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 1rem;
+            margin-top: 1rem;
+            /* Adjust the spacing between items */
+        }
+
+        /* Each image takes up one-third of the container width */
+        .content-image-lineup {
+            width: 27%;
             border-radius: 8px;
-            margin-bottom: 3rem;
-            scrollbar-width: none;
-            /* For Firefox */
-        }
-
-        .scroll-container::-webkit-scrollbar {
-            display: none;
-            /* For Chrome, Safari, and Edge */
-        }
-
-        .scroll-container img {
-            border-radius: 8px;
-            max-width: 450px;
-            /* Set a maximum width for each image */
-        }
-
-        /* Countdown Section */
-
-        .content-image-countdown {
-            width: 20%;
-            max-width: 1000px;
-            border-radius: 8px;
-            margin-top: 6rem;
-        }
-
-        .countdown-container {
-            font-size: 2rem;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 0.2rem;
-            margin-bottom: 4rem;
-        }
-
-        .countdown-item {
-            display: inline-block;
-            margin: 0 1rem;
-            text-align: center;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -267,87 +233,41 @@
         <div class="navbar">
             <ul>
                 <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">HOME</a></li>
-                <li><a href="{{ route('lineup') }}" class="{{ request()->routeIs('lineup') ? 'active' : '' }}">LINE UP</a></li>
-                <li><a href="{{ route('package') }}" class="{{ request()->routeIs('package') ? 'active' : '' }}">PACKAGE</a></li>
-                <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT US</a></li>
+                <li><a href="{{ route('lineup') }}" class="{{ request()->routeIs('lineup') ? 'active' : '' }}">LINE
+                        UP</a></li>
+                <li><a href="{{ route('package') }}"
+                        class="{{ request()->routeIs('package') ? 'active' : '' }}">PACKAGE</a></li>
+                <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT
+                        US</a></li>
                 <li><a href="{{ route('faq') }}" class="{{ request()->routeIs('faq') ? 'active' : '' }}">FAQ</a></li>
             </ul>
         </div>
 
+        {{-- Title --}}
+        <img src="assets/Asset-30.png" alt="Descriptive alt text" class="content-image-mid2">
 
-        {{-- --HOME-- --}}
-        {{-- Jababeka --}}
-        <img src="assets/Asset-9.png" alt="Descriptive alt text" class="content-image-head">
+        <div class="bg-black bg-opacity-60 p-8 rounded-lg shadow-lg w-full max-w-6xl mb-6">
+            <p class="mb-3 text-2xl text-white ">
+                Tentang Acara Be-Benz - Anniversary Komunitas Mercedes-Benz
+            </p>
+            <p class="mb-3 text-lg text-white ">
+                Acara Be-Benz adalah acara yang sudah menjadi agenda setiap 2 tahun sekali, sekaligus spesial dalam rangka merayakan anniversary ke-5th club mobil komunitas Mercedes-Benz w211 Chapter Bekasi, yang akan digelar di lapangan Mall Hollywood Junction, Jababeka, Cikarang, pada tanggal 25 Januari 2025. Acara ini menggabungkan semangat komunitas otomotif dengan hiburan musik dari para musisi ternama, sehingga menjadi momen yang dinantikan para anggota dan pecinta Mercedes-Benz.
+            </p>
+            <p class="mb-3 text-lg text-white ">
+                Menghadirkan artis-artis terkenal dan acara-acara yang menarik Seperti Konser Musik, Fun Run,Car Modifikasi,Bazar Otomotif, dan masih banyak lagi. Be-Benz siap memberikan keseruan dan Hiburan yang tak terlupakan bagi para pengunjung.
+            </p>
+            <p class="mb-3 text-lg text-white ">
+                Be-Benz menjadi wadah bagi para anggota komunitas untuk berbagi cerita, pengalaman, dan antusiasme mereka terhadap Mercedes-Benz, sambil merayakan perjalanan panjang komunitas ini. Dengan atmosfer meriah dan fasilitas yang nyaman, acara ini diharapkan dapat mempererat persaudaraan antar anggota serta memberikan pengalaman istimewa yang menyatukan penggemar otomotif dan musik.
+            </p>
+            <p class="mb-3 text-lg text-white ">
+                Bergabunglah dengan kami dalam perayaan ini menikmati acara yang tidak boleh terlewarkan di acara Be-Benz 2 dan Anniversary ke-5th Komunitas Mercedes-Benz w211 Chapter Bekasi di Jababeka Cikarang!
+            </p>
 
-        {{-- BE-BENZ --}}
-        <img src="assets/Asset-23.png" alt="Descriptive alt text" class="content-image-mid">
-
-        {{-- DATE --}}
-        <img src="assets/Asset-26.png" alt="Descriptive alt text" class="content-image-mid2">
-
-        <!-- BUTTON -->
-        <div class="button-container">
-            <a href="{{ route('order.create') }}">
-                <button class="button-primary">BUY TICKETS</button>
-            </a>
-            <a href="{{ route('faq') }}">
-                <button class="button-secondary">FAQ</button>
-            </a>
         </div>
 
-
-        {{-- --LINEUP SECTION-- --}}
-        {{-- LINEUP TEXT --}}
-        <img src="assets/Asset-17.png" alt="Descriptive alt text" class="content-image-lineuptext">
-        {{-- VIEWALL TEXT --}}
-        <img src="assets/Asset-18.png" alt="Descriptive alt text" class="content-image-viewalltext">
-        <!-- Scrollable Image Container -->
-        <div class="scroll-container">
-            <img src="assets/lineup/Asset-58.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-59.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-60.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-61.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-62.png" alt="Descriptive alt text" class="content-image-lineup">
-        </div>
-
-
-        <!-- Countdown Section -->
-        {{-- <img src="assets/Asset-17.png" alt="Descriptive alt text" class="content-image-countdown"> --}}
-        <div class="countdown-container">
-            <div class="countdown-item"><span id="days">00</span> Days</div>
-            <div class="countdown-item"><span id="hours">00</span> Hours</div>
-            <div class="countdown-item"><span id="minutes">00</span> Minutes</div>
-            <div class="countdown-item"><span id="seconds">00</span> Seconds</div>
-        </div>
     </main>
-    <script>
-        // Set the event date
-        const eventDate = new Date('2025-01-10T23:59:59').getTime();
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 
-        // Update the countdown every second
-        const countdownInterval = setInterval(() => {
-            const now = new Date().getTime();
-            const timeLeft = eventDate - now;
-
-            // Calculate days, hours, minutes, and seconds
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            // Display the results
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
-
-            // If the countdown is over, stop the timer
-            if (timeLeft < 0) {
-                clearInterval(countdownInterval);
-                document.querySelector('.countdown-container').innerText = 'Event Started!';
-            }
-        }, 1000);
-    </script>
 </body>
 
 </html>

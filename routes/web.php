@@ -14,7 +14,7 @@ Route::get('/', function () {
 });
 
 Route::get('/lineup', function () {
-    return view('lineup');
+    return view('page.lineup');
 })->name('lineup');
 
 Route::get('/package', function () {
@@ -22,7 +22,7 @@ Route::get('/package', function () {
 })->name('package');
 
 Route::get('/aboutus', function () {
-    return view('aboutus');
+    return view('page.aboutus');
 })->name('aboutus');
 
 Route::get('/faq', function () {
