@@ -26,7 +26,7 @@ Route::get('/aboutus', function () {
 })->name('aboutus');
 
 Route::get('/faq', function () {
-    return view('faq');
+    return view('page.faq');
 })->name('faq');
 
 

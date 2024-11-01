@@ -230,7 +230,7 @@
     <div class="background"></div>
     <main>
         <!-- Navbar -->
-        <div class="navbar" id="navbar">
+        <div class="navbar">
             <ul>
                 <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">HOME</a></li>
                 <li><a href="{{ route('lineup') }}" class="{{ request()->routeIs('lineup') ? 'active' : '' }}">LINE
@@ -244,49 +244,113 @@
         </div>
 
         {{-- Title --}}
-        <img src="assets/Asset-30.png" alt="Descriptive alt text" class="content-image-mid2">
+        <img src="assets/Asset-40.png" alt="Descriptive alt text" class="content-image-mid2">
 
-        <div class="bg-black bg-opacity-60 p-8 rounded-lg shadow-lg w-full max-w-6xl mb-6">
-            <p class="mb-3 text-2xl text-white ">
-                Tentang Acara Be-Benz - Anniversary Komunitas Mercedes-Benz
+        <div class="bg-black bg-opacity-60 p-8 rounded-lg shadow-lg w-full max-w-4xl mb-6">
+            <p class="mb-3 text-2xl text-white font-bold ">
+                FAQ Acara Konser Be-benz di Jababeka
             </p>
-            <p class="mb-3 text-lg text-white ">
-                Acara Be-Benz adalah acara yang sudah menjadi agenda setiap 2 tahun sekali, sekaligus spesial dalam
-                rangka merayakan anniversary ke-5th club mobil komunitas Mercedes-Benz w211 Chapter Bekasi, yang akan
-                digelar di lapangan Mall Hollywood Junction, Jababeka, Cikarang, pada tanggal 25 Januari 2025. Acara ini
-                menggabungkan semangat komunitas otomotif dengan hiburan musik dari para musisi ternama, sehingga
-                menjadi momen yang dinantikan para anggota dan pecinta Mercedes-Benz.
-            </p>
-            <p class="mb-3 text-lg text-white ">
-                Menghadirkan artis-artis terkenal dan acara-acara yang menarik Seperti Konser Musik, Fun Run,Car
-                Modifikasi,Bazar Otomotif, dan masih banyak lagi. Be-Benz siap memberikan keseruan dan Hiburan yang tak
-                terlupakan bagi para pengunjung.
-            </p>
-            <p class="mb-3 text-lg text-white ">
-                Be-Benz menjadi wadah bagi para anggota komunitas untuk berbagi cerita, pengalaman, dan antusiasme
-                mereka terhadap Mercedes-Benz, sambil merayakan perjalanan panjang komunitas ini. Dengan atmosfer meriah
-                dan fasilitas yang nyaman, acara ini diharapkan dapat mempererat persaudaraan antar anggota serta
-                memberikan pengalaman istimewa yang menyatukan penggemar otomotif dan musik.
-            </p>
-            <p class="mb-3 text-lg text-white ">
-                Bergabunglah dengan kami dalam perayaan ini menikmati acara yang tidak boleh terlewarkan di acara
-                Be-Benz 2 dan Anniversary ke-5th Komunitas Mercedes-Benz w211 Chapter Bekasi di Jababeka Cikarang!
-            </p>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    1.⁠ ⁠Kapan dan di mana acara konser Be-Benz diadakan?
+                </p>
+                <p class="text-lg text-white ">
+                    Acara ini akan diselenggarakan pada 25 Januari 2025 di Lapangan samping Apartement Monrou
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    2.⁠ ⁠Bagaimana cara membeli tiket konser?
+                </p>
+                <p class="text-lg text-white ">
+                    Tiket dapat dibeli melalui situs web resmi Be-Benz Be-benz.id ,Anda juga dapat membeli tiket di tempat acara jika masih tersedia.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    3.⁠ ⁠Berapa harga tiket konser?
+                </p>
+                <p class="text-lg text-white ">
+                    Harga tiket bervariasi berdasarkan jenis tiket yang dipilih, seperti tiket reguler, VIP. Detail harga dapat dilihat di situs resmi atau halaman buy ticket
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    4.⁠ ⁠Apakah ada batasan usia untuk menghadiri konser ini?
+                </p>
+                <p class="text-lg text-white ">
+                    Ya, acara ini hanya diperuntukkan bagi penonton yang berusia 18 tahun ke atas.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    5.⁠ ⁠Apa saja fasilitas yang tersedia di konser ini?
+                </p>
+                <p class="text-lg text-white ">
+                    Pengunjung akan menikmati area parkir luas, toilet, area makanan dan minuman, serta layanan kesehatan darurat. Area VIP memiliki fasilitas tambahan seperti lounge khusus dan tempat duduk yang lebih nyaman.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    6.⁠ ⁠Bagaimana akses menuju lokasi konser di Jababeka?
+                </p>
+                <p class="text-lg text-white ">
+                    Lokasi konser dapat dicapai melalui kendaraan pribadi atau transportasi umum seperti bus dan shuttle. Petunjuk arah dan akses parkir akan disediakan di situs resmi acara.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    7.⁠ ⁠Apakah diperbolehkan membawa kamera profesional?
+                </p>
+                <p class="text-lg text-white ">
+                    Penggunaan kamera profesional dan peralatan perekam video dilarang. Pengunjung diperbolehkan membawa ponsel dan kamera saku.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    8.⁠ ⁠Apakah ada refund jika saya tidak bisa hadir?
+                </p>
+                <p class="text-lg text-white ">
+                    Tiket yang sudah dibeli tidak dapat dikembalikan, kecuali jika acara dibatalkan atau ditunda oleh penyelenggara.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    9.⁠ ⁠Apa saja langkah keamanan yang diterapkan di konser ini?
+                </p>
+                <p class="text-lg text-white ">
+                    Kami akan menerapkan protokol keamanan yang ketat, termasuk pemeriksaan di pintu masuk. Pengunjung dilarang membawa barang-barang tajam, senjata, dan obat-obatan terlarang.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    10.⁠ ⁠Siapa saja artis yang akan tampil di konser ini?
+                </p>
+                <p class="text-lg text-white ">
+                    Artis yang akan tampil adalah Wawes, Shuljah dll, Daftar lengkap dan jadwal akan diumumkan mendekati hari H.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    11.⁠ ⁠Bagaimana jika hujan atau cuaca buruk?
+                </p>
+                <p class="text-lg text-white ">
+                    Acara ini akan tetap berjalan sesuai rencana. Namun, penyelenggara akan menyediakan perlindungan ekstra jika terjadi hujan.
+                </p>
+            </div>
+            <div class="mb-3">
+                <p class="mb-1 text-lg text-white font-semibold">
+                    12.⁠ ⁠Apakah ada merchandise resmi yang dijual di konser?
+                </p>
+                <p class="text-lg text-white ">
+                    Ya, merchandise resmi akan dijual di area acara. Pastikan Anda hanya membeli dari stand resmi yang telah disediakan.
+                </p>
+            </div>
         </div>
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-    <script>
-        // JavaScript to toggle full-width navbar on scroll
-        window.addEventListener("scroll", function() {
-            const navbar = document.getElementById("navbar");
-            if (window.scrollY > 0) {
-                navbar.classList.add("full-navbar");
-            } else {
-                navbar.classList.remove("full-navbar");
-            }
-        });
-    </script>
+
 </body>
 
 </html>
