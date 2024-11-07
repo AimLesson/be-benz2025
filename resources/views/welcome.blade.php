@@ -269,15 +269,15 @@
                 <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">HOME</a></li>
                 <li><a href="{{ route('lineup') }}" class="{{ request()->routeIs('lineup') ? 'active' : '' }}">LINE UP</a></li>
                 <li><a href="{{ route('package') }}" class="{{ request()->routeIs('package') ? 'active' : '' }}">PACKAGE</a></li>
-                <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT US</a></li>
-                <li><a href="{{ route('faq') }}" class="{{ request()->routeIs('faq') ? 'active' : '' }}">FAQ</a></li>
+                {{-- <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT US</a></li> --}}
+                {{-- <li><a href="{{ route('faq') }}" class="{{ request()->routeIs('faq') ? 'active' : '' }}">FAQ</a></li> --}}
             </ul>
         </div>
 
 
         {{-- --HOME-- --}}
         {{-- Jababeka --}}
-        <img src="assets/Asset-9.png" alt="Descriptive alt text" class="content-image-head">
+        {{-- <img src="assets/Asset-9.png" alt="Descriptive alt text" class="content-image-head"> --}}
 
         {{-- BE-BENZ --}}
         <img src="assets/Asset-23.png" alt="Descriptive alt text" class="content-image-mid">

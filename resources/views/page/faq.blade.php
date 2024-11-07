@@ -237,9 +237,9 @@
                         UP</a></li>
                 <li><a href="{{ route('package') }}"
                         class="{{ request()->routeIs('package') ? 'active' : '' }}">PACKAGE</a></li>
-                <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT
+                {{-- <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT
                         US</a></li>
-                <li><a href="{{ route('faq') }}" class="{{ request()->routeIs('faq') ? 'active' : '' }}">FAQ</a></li>
+                <li><a href="{{ route('faq') }}" class="{{ request()->routeIs('faq') ? 'active' : '' }}">FAQ</a></li> --}}
             </ul>
         </div>
 
