@@ -268,7 +268,7 @@
             <ul>
                 <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">HOME</a></li>
                 <li><a href="{{ route('lineup') }}" class="{{ request()->routeIs('lineup') ? 'active' : '' }}">LINE UP</a></li>
-                <li><a href="{{ route('package') }}" class="{{ request()->routeIs('package') ? 'active' : '' }}">PACKAGE</a></li>
+                <li><a href="#">PACKAGE</a></li>
                 {{-- <li><a href="{{ route('aboutus') }}" class="{{ request()->routeIs('aboutus') ? 'active' : '' }}">ABOUT US</a></li> --}}
                 {{-- <li><a href="{{ route('faq') }}" class="{{ request()->routeIs('faq') ? 'active' : '' }}">FAQ</a></li> --}}
             </ul>
@@ -308,6 +308,7 @@
             <img src="assets/lineup/Asset-60.png" alt="Descriptive alt text" class="content-image-lineup">
             <img src="assets/lineup/Asset-61.png" alt="Descriptive alt text" class="content-image-lineup">
             <img src="assets/lineup/Asset-62.png" alt="Descriptive alt text" class="content-image-lineup">
+            <img src="assets/lineup/Asset-63.png" alt="Descriptive alt text" class="content-image-lineup">
         </div>
 
 

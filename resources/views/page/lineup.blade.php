@@ -249,6 +249,7 @@
             <img src="assets/lineup/Asset-60.png" alt="Descriptive alt text" class="content-image-lineup">
             <img src="assets/lineup/Asset-61.png" alt="Descriptive alt text" class="content-image-lineup">
             <img src="assets/lineup/Asset-62.png" alt="Descriptive alt text" class="content-image-lineup">
+            <img src="assets/lineup/Asset-63.png" alt="Descriptive alt text" class="content-image-lineup">
         </div>
 
 
