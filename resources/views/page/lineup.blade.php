@@ -244,12 +244,12 @@
         {{-- Konten --}}
         <!-- Konten -->
         <div class="container">
-            <img src="assets/lineup/Asset-58.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-59.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-60.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-61.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-62.png" alt="Descriptive alt text" class="content-image-lineup">
-            <img src="assets/lineup/Asset-63.png" alt="Descriptive alt text" class="content-image-lineup">
+        <img src="assets/lineup/Asset-59.png" alt="Masdddho" class="content-image-lineup">
+            <img src="assets/lineup/Asset-61.png" alt="Wawes" class="content-image-lineup">
+            <img src="assets/lineup/Asset-62.png" alt="Ngatmombilung" class="content-image-lineup">
+            <img src="assets/lineup/Asset-60.png" alt="DJ" class="content-image-lineup">
+            <img src="assets/lineup/Asset-58.png" alt="Models" class="content-image-lineup">
+            <img src="assets/lineup/Asset-63.png" alt="Band" class="content-image-lineup">
         </div>
 
 
